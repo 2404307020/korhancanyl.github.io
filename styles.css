@@ -27,3 +27,12 @@ body{font-family:Segoe UI, Roboto, Arial, sans-serif;margin:0;background:var(--b
   .site-header .container{flex-direction:column;align-items:flex-start}
   .site-header nav{margin-top:.5rem}
 }
+
+/* Form ve dashboard uyarlamaları */
+.form-card{max-width:420px;margin:2rem auto;padding:1.25rem}
+.form-card label{display:block;margin:.5rem 0 .25rem}
+.form-card input{width:100%;padding:.6rem;border:1px solid #e6e6e6;border-radius:6px}
+.form-card .btn{width:100%;margin-top:1rem}
+
+.card h2{margin-top:0}
+
