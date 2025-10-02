@@ -36,3 +36,9 @@ body{font-family:Segoe UI, Roboto, Arial, sans-serif;margin:0;background:var(--b
 
 .card h2{margin-top:0}
 
+/* Welcome modal */
+.welcome-modal{display:none;position:fixed;inset:0;align-items:center;justify-content:center;background:rgba(0,0,0,.4);z-index:2000}
+.welcome-content{background:var(--card);padding:1.25rem;border-radius:10px;max-width:520px;width:90%;text-align:center;box-shadow:0 6px 24px rgba(0,0,0,.18)}
+.welcome-actions{display:flex;gap:1rem;align-items:center;justify-content:center;margin-top:1rem}
+.dont-show{font-size:.9rem;color:var(--muted)}
+
