@@ -3,95 +3,79 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Atatürk İlkokulu</title>
+    <title>Örnek Üniversitesi</title>
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
     <header class="site-header">
       <div class="container">
-        <h1>Atatürk İlkokulu</h1>
+        <h1>Örnek Üniversitesi</h1>
         <nav>
           <a href="#home">Ana Sayfa</a>
-          <a href="#dersler">Dersler</a>
-          <a href="#ogretmenler">Öğretmenler</a>
-          <a href="#iletisim">İletişim</a>
+          <a href="#hakkimizda">Hakkımızda</a>
+          <a href="#fakulteler">Fakülteler</a>
+          <a href="#akademik">Akademik</a>
           <a href="login.html" class="login-link">Öğrenci Girişi</a>
         </nav>
       </div>
     </header>
 
-    <!-- Hoşgeldin modal -->
+    <!-- Full-screen Hoşgeldin splash -->
     <div id="welcomeModal" class="welcome-modal" role="dialog" aria-modal="true" aria-labelledby="welcomeTitle">
       <div class="welcome-content">
-        <h2 id="welcomeTitle">Hoş geldiniz!</h2>
-        <p>Atatürk İlkokulu web sitesine hoş geldiniz. Sitemizi keşfetmek için menüyü kullanabilirsiniz.</p>
-        <div class="welcome-actions">
-          <button id="closeWelcome" class="btn">Tamam</button>
-          <label class="dont-show"><input type="checkbox" id="dontShow"> Bir daha gösterme</label>
-        </div>
+        <h2 id="welcomeTitle">Örnek Üniversitesi'ne Hoş Geldiniz</h2>
+        <p>Kariyeriniz ve bilginiz için güvenilir bir başlangıç.</p>
       </div>
     </div>
 
     <main class="container">
       <section id="home" class="hero">
-        <h2>Hoş geldiniz!</h2>
-        <p>Güvenilir, modern ve sevgi dolu bir öğrenme ortamı.</p>
-        <a class="btn" href="#dersler">Derslerimize göz atın</a>
+        <h2>İleri Bilim. Güçlü Toplum.</h2>
+        <p>Araştırma odaklı eğitim, uluslararası iş birlikleri ve öğrenci merkezli öğretim.</p>
+        <a class="btn" href="#fakulteler">Fakültelerimizi Keşfedin</a>
       </section>
 
-      <section id="dersler" class="grid">
-        <h3>Dersler</h3>
+      <section id="hakkimizda" class="card">
+        <h3>Hakkımızda</h3>
+        <p>Örnek Üniversitesi, disiplinlerarası araştırma ve kaliteli eğitim sunmayı amaçlayan köklü bir yükseköğretim kurumudur. Öğrencilerimize modern laboratuvarlar, uluslararası değişim programları ve güçlü endüstri ortaklıkları sağlıyoruz.</p>
+      </section>
+
+      <section id="fakulteler" class="grid">
+        <h3>Fakülteler</h3>
         <article class="card">
-          <h4>Matematik</h4>
-          <p>Temel aritmetik, problem çözme ve mantık çalışmaları.</p>
+          <h4>Mühendislik Fakültesi</h4>
+          <p>Bilgisayar Mühendisliği, Elektrik-Elektronik, Makine ve endüstriyel projeler.</p>
         </article>
         <article class="card">
-          <h4>Fen Bilimleri</h4>
-          <p>Deneyler, keşifler ve bilimsel düşünme becerileri.</p>
+          <h4>Fen-Edebiyat Fakültesi</h4>
+          <p>Matematik, Fizik, Kimya ve Sosyal Bilimler alanlarında lisans ve lisansüstü çalışmalar.</p>
         </article>
         <article class="card">
-          <h4>Türkçe</h4>
-          <p>Okuma, yazma ve iletişim becerileri.</p>
+          <h4>İktisadi ve İdari Bilimler</h4>
+          <p>İşletme, Ekonomi ve Kamu Yönetimi programları.</p>
         </article>
       </section>
 
-      <section id="ogretmenler">
-        <h3>Öğretmenlerimiz</h3>
-        <ul class="teachers">
-          <li>
-            <img src="https://via.placeholder.com/80" alt="Ayşe Yılmaz" />
-            <div>
-              <strong>Ayşe Yılmaz</strong>
-              <div class="muted">Sınıf Öğretmeni</div>
-            </div>
-          </li>
-          <li>
-            <img src="https://via.placeholder.com/80" alt="Mehmet Kara" />
-            <div>
-              <strong>Mehmet Kara</strong>
-              <div class="muted">Matematik Öğretmeni</div>
-            </div>
-          </li>
-          <li>
-            <img src="https://via.placeholder.com/80" alt="Elif Demir" />
-            <div>
-              <strong>Elif Demir</strong>
-              <div class="muted">Fen Bilimleri Öğretmeni</div>
-            </div>
-          </li>
+      <section id="akademik" class="card">
+        <h3>Akademik Takvim & Araştırma</h3>
+        <p>Başvuru tarihleri, akademik takvim ve devam eden araştırma projelerimiz hakkında güncel bilgiler.</p>
+        <ul>
+          <li>Güz dönemi: 15 Eylül - 20 Ocak</li>
+          <li>Bahar dönemi: 1 Şubat - 10 Haziran</li>
+          <li>Yüksek lisans ve doktora başvuruları için son tarihler: 30 Temmuz</li>
         </ul>
       </section>
 
-      <section id="iletisim" class="contact">
+      <section id="iletisim" class="contact card">
         <h3>İletişim</h3>
-        <p>Adres: Örnek Mah. Eğitim Cad. No:1</p>
-        <p>Telefon: (555) 123 45 67</p>
-        <p>Email: bilgi@ornekokul.edu.tr</p>
+        <p>Adres: Üniversite Yolu No:10, Örnekşehir</p>
+        <p>Telefon: (312) 555 12 34</p>
+        <p>Email: bilgi@ornekuniversitesi.edu.tr</p>
       </section>
     </main>
 
     <footer class="site-footer">
-      <div class="container">© 2025 Atatürk İlkokulu - Tüm hakları saklıdır.</div>
+      <div class="container">© 2025 Örnek Üniversitesi - Tüm hakları saklıdır.</div>
     </footer>
     <script src="auth.js"></script>
     <script src="welcome.js"></script>
