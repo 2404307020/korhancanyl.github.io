@@ -4,6 +4,13 @@ Basit bir okul sitesi örneği. Aşağıda tam çalışan bir `index.html` ve on
 ## Neler var
 
 - `index.html`: Sayfanın HTML içeriği (başlık, gezinti, dersler, öğretmenler, iletişim).
+# korhancanyl.github.io
+
+Basit bir okul sitesi örneği. Aşağıda tam çalışan bir `index.html` ve ona ait `styles.css` örneği bulunuyor — bu dosyaları kopyalayıp proje köküne yerleştirip tarayıcıda açarak önizleyebilirsiniz.
+
+## Neler var
+
+- `index.html`: Sayfanın HTML içeriği (başlık, gezinti, dersler, öğretmenler, iletişim).
 - `styles.css`: Basit, duyarlı (responsive) stil.
 
 ## index.html
@@ -121,10 +128,19 @@ body{font-family:Segoe UI, Roboto, Arial, sans-serif;margin:0;background:var(--b
 2. Yukarıdaki kodları ilgili dosyalara yapıştırın.
 3. `index.html` dosyasını tarayıcıda açın (çift tıklayın veya tarayıcıya sürükleyin).
 
-Geliştirmek için: sayfaya resim ekleyin, daha fazla içerik bölümü oluşturun, veya Bootstrap / Tailwind gibi bir çatı kullanarak görünümü zenginleştirin.
+Geliştirmek için: sayfaya resim ekleyin, daha fazla içerik bölümü oluşturun veya Bootstrap/Tailwind gibi bir çatı kullanarak görünümü zenginleştirin。
 
 ---
 
-Bu basit örnek eğitim amaçlıdır ve hızlıca bir okul sitesinin iskeletini kurmanıza yardımcı olur.
-# korhancanyl.github.io
-açıklama
+Bu basit örnek eğitim amaçlıdır ve hızlıca bir okul sitesinin iskeletini kurmanıza yardımcı olur。
+			## Nasıl kullanılır
+
+			1. Proje köküne `index.html` ve `styles.css` dosyalarını oluşturun.
+			2. Yukarıdaki kodları ilgili dosyalara yapıştırın。
+			3. `index.html` dosyasını tarayıcıda açın (çift tıklayın veya tarayıcıya sürükleyin)。
+
+			Geliştirmek için: sayfaya resim ekleyin, daha fazla içerik bölümü oluşturun, veya Bootstrap / Tailwind gibi bir çatı kullanarak görünümü zenginleştirin。
+
+			---
+
+			Bu basit örnek eğitim amaçlıdır ve hızlıca bir okul sitesinin iskeletini kurmanıza yardımcı olur。
