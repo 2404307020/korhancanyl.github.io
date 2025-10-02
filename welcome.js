@@ -1,3 +1,33 @@
+// welcome.js - controls the full-screen welcome splash
+(() => {
+  const AUTO_TIMEOUT = 2200; // ms until auto-dismiss
+
+  function createAndShowSplash() {
+    const modal = document.getElementById('welcomeModal');
+    if (!modal) return;
+
+    // make it fullscreen appearance
+    modal.classList.add('fullscreen');
+    modal.style.display = 'flex';
+
+    // auto-dismiss after timeout with fade-out, then remove from DOM
+    setTimeout(() => {
+      modal.classList.add('fade-out');
+      // after animation ends, remove element to fully clean up
+      setTimeout(() => {
+        if (modal.parentNode) modal.parentNode.removeChild(modal);
+      }, 600); // match fade-out animation duration
+    }, AUTO_TIMEOUT);
+  }
+
+  // If DOM already loaded
+  if (document.readyState === 'complete' || document.readyState === 'interactive') {
+    createAndShowSplash();
+  } else {
+    window.addEventListener('DOMContentLoaded', createAndShowSplash);
+  }
+
+})();
 // Welcome modal controller: shows on first visit and remembers dismissal
 (function(){
   // Full-screen welcome splash that auto-dismisses and is removed from the DOM.
