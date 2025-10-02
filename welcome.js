@@ -1,38 +1,35 @@
 // Welcome modal controller: shows on first visit and remembers dismissal
 (function(){
-  const KEY = 'welcomeDismissed';
-  function showModal(){
+  // Full-screen welcome splash that auto-dismisses and is removed from the DOM.
+  const AUTO_TIMEOUT = 2200; // ms
+
+  function showSplash(){
     const modal = document.getElementById('welcomeModal');
     if(!modal) return;
     modal.style.display = 'flex';
-    // focus for accessibility
-    const btn = document.getElementById('closeWelcome');
-    if(btn) btn.focus();
-  }
-
-  function hideModal(){
-    const modal = document.getElementById('welcomeModal');
-    if(!modal) return;
-    modal.style.display = 'none';
+    // after timeout, fade out and remove
+    setTimeout(()=>{
+      modal.classList.add('fade-out');
+      // remove after animation (match CSS animation-duration)
+      setTimeout(()=>{
+        if(modal && modal.parentNode) modal.parentNode.removeChild(modal);
+      }, 600);
+    }, AUTO_TIMEOUT);
   }
 
   document.addEventListener('DOMContentLoaded', function(){
     try{
-      const dismissed = localStorage.getItem(KEY);
-      if(!dismissed){
-        showModal();
-      }
-
+      showSplash();
+      // also allow manual close if the button exists
       const close = document.getElementById('closeWelcome');
       if(close) close.addEventListener('click', function(){
-        const dont = document.getElementById('dontShow');
-        if(dont && dont.checked){
-          localStorage.setItem(KEY, '1');
-        }
-        hideModal();
+        const modal = document.getElementById('welcomeModal');
+        if(!modal) return;
+        modal.classList.add('fade-out');
+        setTimeout(()=>{ if(modal && modal.parentNode) modal.parentNode.removeChild(modal); }, 600);
       });
     }catch(e){
-      // ignore storage errors
+      // ignore
     }
   });
 })();
