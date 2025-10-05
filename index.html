@@ -1,0 +1,132 @@
+<!doctype html>
+<html lang="tr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Lezzet Durağı - Restoran</title>
+    <meta name="description" content="Lezzet Durağı - Menümüz, çalışma saatleri ve iletişim bilgileri">
+    <style>
+      :root{--accent:#d97706;--muted:#64748b;--bg:#f8fafc}
+      *{box-sizing:border-box}
+      body{font-family:Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial; margin:0; background:var(--bg); color:#0f172a}
+      header{background:#fff;padding:1rem 2rem;box-shadow:0 2px 8px rgba(2,6,23,.06);display:flex;align-items:center;justify-content:space-between}
+      .brand{font-weight:700;color:var(--accent)}
+      nav a{margin-left:1rem;color:#0f172a;text-decoration:none}
+      .container{max-width:1100px;margin:2rem auto;padding:0 1rem}
+      .hero{display:grid;grid-template-columns:1fr 360px;gap:1.5rem;align-items:center}
+      .hero .intro h1{margin:0 0 .5rem 0;font-size:2rem}
+      .hero .intro p{color:var(--muted);margin:0 0 1rem}
+      .card{background:#fff;padding:1rem;border-radius:12px;box-shadow:0 6px 20px rgba(2,6,23,.06)}
+      .info small{display:block;color:var(--muted);margin-top:.5rem}
+      .gallery{display:grid;grid-template-columns:repeat(3,1fr);gap:8px;margin-top:1rem}
+      .gallery img{width:100%;height:110px;object-fit:cover;border-radius:8px}
+      section{margin-top:1.25rem}
+      .menu-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:1rem}
+      .menu-item{padding:0.75rem;border-radius:8px;background:linear-gradient(180deg,#fff,#fcfcff);box-shadow:0 4px 12px rgba(2,6,23,.04)}
+      .menu-item h4{margin:0 0 .25rem 0}
+      .price{float:right;color:var(--accent);font-weight:600}
+      footer{margin:2rem 0 3rem 0;text-align:center;color:var(--muted)}
+      @media (max-width:800px){.hero{grid-template-columns:1fr;}.gallery{grid-template-columns:repeat(2,1fr)} }
+    </style>
+  </head>
+  <body>
+    <header>
+      <div class="brand">Lezzet Durağı</div>
+      <nav>
+        <a href="#menu">Menu</a>
+        <a href="#hakkimizda">Hakkımızda</a>
+        <a href="#iletisim">İletişim</a>
+      </nav>
+    </header>
+
+    <main class="container">
+      <div class="hero">
+        <div class="intro">
+          <div class="card">
+            <h1>Lezzet Durağı'na Hoş Geldiniz</h1>
+            <p>Şehrin en taze malzemeleriyle hazırlanan lezzetler. Ev yapımı soslar, günlük taze pasta ve sıcak karşılama sizi bekliyor.</p>
+            <div class="info">
+              <strong>Çalışma Saatleri:</strong>
+              <small>Pazartesi - Cumartesi: 11:00 - 22:00 · Pazar: Kapalı</small>
+              <strong>Adres:</strong>
+              <small>Örnek Mah. Lezzet Sok. No:12, İstanbul</small>
+              <strong>Telefon:</strong>
+              <small>+90 555 123 45 67</small>
+            </div>
+          </div>
+        </div>
+
+        <aside>
+          <div class="card">
+            <h3>Öne Çıkanlar</h3>
+            <div class="gallery">
+              <img src="https://images.unsplash.com/photo-1604908177522-4d3b3a6ecbdb?auto=format&fit=crop&w=800&q=60" alt="Yemek 1">
+              <img src="https://images.unsplash.com/photo-1555992336-03a23c8d6f56?auto=format&fit=crop&w=800&q=60" alt="Yemek 2">
+              <img src="https://images.unsplash.com/photo-1543352634-8b0c5d7e3d3a?auto=format&fit=crop&w=800&q=60" alt="Tatlı">
+            </div>
+            <p style="margin-top:.75rem;color:var(--muted);font-size:.95rem">Fotoğraflar örnek amaçlıdır. Kendi görsellerinizi yükleyebilirsiniz.</p>
+          </div>
+        </aside>
+      </div>
+
+      <section id="menu">
+        <h2>Menü</h2>
+        <p style="color:var(--muted);margin-top:.25rem">Popüler lezzetlerimizden bazıları:</p>
+        <div class="menu-grid">
+          <div class="card menu-item">
+            <h4>Çorba Günün Çorbası <span class="price">₺35</span></h4>
+            <p style="color:var(--muted);margin:0">Mevsimine göre seçilen taze çorba.</p>
+          </div>
+          <div class="card menu-item">
+            <h4>Tavuk Şinitzel <span class="price">₺85</span></h4>
+            <p style="color:var(--muted);margin:0">İnce pane, yanına roka ve limon.</p>
+          </div>
+          <div class="card menu-item">
+            <h4>Izgara Somon <span class="price">₺120</span></h4>
+            <p style="color:var(--muted);margin:0">Fıstıklı tereyağı ve mevsim salatası ile.</p>
+          </div>
+          <div class="card menu-item">
+            <h4>Ev Yapımı Makarna <span class="price">₺75</span></h4>
+            <p style="color:var(--muted);margin:0">Krema soslu veya domates soslu seçenekleriyle.</p>
+          </div>
+          <div class="card menu-item">
+            <h4>Cheesecake <span class="price">₺40</span></h4>
+            <p style="color:var(--muted);margin:0">Günün tatlısı, meyveli sos ile.</p>
+          </div>
+          <div class="card menu-item">
+            <h4>Soğuk İçecekler <span class="price">₺20-35</span></h4>
+            <p style="color:var(--muted);margin:0">Kahve, limonata, taze sıkılmış meyve suları.</p>
+          </div>
+        </div>
+      </section>
+
+      <section id="hakkimizda">
+        <h2>Hakkımızda</h2>
+        <div class="card" style="margin-top:.5rem">
+          <p style="margin:0;color:var(--muted)">Lezzet Durağı, yerel üreticilerden temin edilen malzemelerle günlük olarak hazırlanan taze yemekler sunar. Samimi servis ve temiz bir ortam ilk önceliğimizdir.</p>
+        </div>
+      </section>
+
+      <section id="iletisim">
+        <h2>İletişim</h2>
+        <div class="card" style="display:flex;gap:1rem;align-items:center;margin-top:.5rem;flex-wrap:wrap">
+          <div style="flex:1;min-width:200px">
+            <strong>Adres</strong>
+            <p style="margin:.25rem 0 0 0;color:var(--muted)">Örnek Mah. Lezzet Sok. No:12, İstanbul</p>
+            <strong style="display:block;margin-top:.5rem">Telefon</strong>
+            <p style="margin:.25rem 0 0 0;color:var(--muted)">+90 555 123 45 67</p>
+          </div>
+          <div style="flex:1;min-width:200px">
+            <strong>Rezervasyon</strong>
+            <p style="margin:.25rem 0 0 0;color:var(--muted)">rezervasyon@lezzetduragi.example</p>
+            <small style="display:block;margin-top:.5rem;color:var(--muted)">Sosyal medya: @lezzetduragi</small>
+          </div>
+        </div>
+      </section>
+
+      <footer>
+        <small>Bu bir örnek işletme sayfasıdır. İçerikleri düzenlemek için dosyayı (index.html) açın.</small>
+      </footer>
+    </main>
+  </body>
+</html>
